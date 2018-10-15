@@ -1,24 +1,14 @@
 # README
+> Make sure you have rails installed on your computer with gitbash.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Clone the Project on your device
 
-Things you may want to cover:
+> Make sure you install sqlite3 gems
 
-* Ruby version
+> Run command 'bundle install'
 
-* System dependencies
+> Create a database with cammand rake db:create on your project directory
 
-* Configuration
+> Migrate the database using command rake db:migrate
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+> run the server by running command rails s, it should work for you.
