@@ -1,4 +1,8 @@
 # README
+
+ A simple webapp based on ruby rails framework intended to help college students trade thier old books with their freinds on campus. 
+
+To Run the Project Please follow the following 
 > Make sure you have rails installed on your computer with gitbash.
 
 > Clone the Project on your device
