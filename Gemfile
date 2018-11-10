@@ -15,6 +15,7 @@ gem 'turbolinks', '~> 5'
 gem 'simple_form'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem "paperclip", "~> 6.0.0"
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
