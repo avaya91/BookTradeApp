@@ -1,13 +1,26 @@
-<p><%= review.rating %></p>
-<p><%= review.comment %></p>
+<div class="review">
+
+<p class="review-rating" ><b>User Rating:</b> <%= review.rating %></p>
+<p class="review-comment"><b>Comment:</b> <%= review.comment %></p>
+
+<% if user_signed_in? %>
+<p class="user-email"><b>User Email:</b> <%= review.username %></p>
+<p class="user-book"><b>Book to Trade with:</b> <%= review.bookname %></p>
+<% end %>
 
 <% if user_signed_in? %>
 
 <% if review.user_id == current_user.id %>
 
-<%= link_to "Edit", edit_book_review_path(review.book, review) %>
-<%= link_to "Delete", book_review_path(review.book, review), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-custom" %>
+<div class="links btn-group">
 
+<%= link_to "Edit", edit_book_review_path(review.book, review), class: "btn btn-custom" %>
+
+<%= link_to "Delete", book_review_path(review.book, review), method: :delete, data: { confirm: "Are you sure?" },  class: "btn btn-custom" %>
+
+</div>
 <% end %>	
 
 <% end %>
+
+</div>

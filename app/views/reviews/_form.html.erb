@@ -1,5 +1,7 @@
 <%= simple_form_for([@book, @book.reviews.build]) do |f| %>
 	<%= f.input :comment %>
-	<%= f.input :rating %>
-	<%= f.button :submit %>
+	<%= f.input :rating, label: 'User Ratings' %>
+	<%= f.input :username, label: 'User Email' %>
+	<%= f.input :bookname, label: 'Book you want to trade with' %>
+	<%= f.button :submit, 'Send Request', :class => "btn-custom2" %>
 	<% end %>

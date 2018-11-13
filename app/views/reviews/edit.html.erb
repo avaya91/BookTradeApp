@@ -1,7 +1,14 @@
+<div class="col-md-6 col-md-offset-3">
+<div class="new-book-form">
 <h1>Edit Review</h1>
 
 <%= simple_form_for([@book, @review]) do |f| %>
 	<%= f.input :rating %>
 	<%= f.input :comment %>
-	<%= f.button :submit %>
+	<%= f.input :username %>
+	<%= f.input :bookname %>
+	<%= f.button :submit, :class => "btn-custom2"  %>
 <% end %>
+
+</div>
+</div>

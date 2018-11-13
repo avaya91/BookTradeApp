@@ -1,6 +1,7 @@
 class ReviewsController < ApplicationController
 	before_action :find_book
 	before_action :find_review, only: [:edit, :update, :destroy]
+	before_action :authenticate_user!, only: [:new, :edit]
 
 	def new
 	  @review = Review.new
@@ -38,7 +39,7 @@ class ReviewsController < ApplicationController
 	private
 
 	def review_params
-		params.require(:review).permit(:rating, :comment)
+		params.require(:review).permit(:rating, :comment, :username, :bookname)
 	end
 
     def find_book
