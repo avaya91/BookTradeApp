@@ -32,7 +32,7 @@
 /* General styles */
 
 body {
-	background-color: #f5f5f5;
+	background-color: #ababab;
 	font-family: 'Lora', serif;
 }
 
@@ -53,12 +53,12 @@ p.alert, p.notice {
 	text-transform: uppercase;
 }
 .navbar-default {
-	background-color: #fff;
+	background-color: #626262;
 	padding-bottom: 5px;
 	padding-top: 5px;
 
 	.navbar-nav > li > a {
-		color: #222;
+		color: #f5f5f5;
 		&:hover {
 			color: darken(#f1c40f, 5%);
 			transition: 0.5s;

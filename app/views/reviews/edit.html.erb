@@ -3,10 +3,10 @@
 <h1>Edit Review</h1>
 
 <%= simple_form_for([@book, @review]) do |f| %>
-	<%= f.input :rating %>
+    <%= f.input :username %>
+    <%= f.input :bookname %>
+	<%= f.input :rating, label: 'Cash Offer($)' %>
 	<%= f.input :comment %>
-	<%= f.input :username %>
-	<%= f.input :bookname %>
 	<%= f.button :submit, :class => "btn-custom2"  %>
 <% end %>
 

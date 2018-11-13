@@ -1,13 +1,10 @@
 <div class="review">
-
-<p class="review-rating" ><b>User Rating:</b> <%= review.rating %></p>
-<p class="review-comment"><b>Comment:</b> <%= review.comment %></p>
-
 <% if user_signed_in? %>
 <p class="user-email"><b>User Email:</b> <%= review.username %></p>
 <p class="user-book"><b>Book to Trade with:</b> <%= review.bookname %></p>
 <% end %>
-
+<p class="review-comment"><b>Comment:</b> <%= review.comment %></p>
+<p class="review-rating" ><b>Cash Offer:</b> <b>$<b/><%= review.rating %></p>
 <% if user_signed_in? %>
 
 <% if review.user_id == current_user.id %>
